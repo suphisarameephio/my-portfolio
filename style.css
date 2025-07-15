@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap');
 
 body {
-  font-family: 'Prompt', sans-serif;
-  background: #f7fafc;
+  background: #181818;
+  color: #fff;
   margin: 0;
-  color: #222;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 .container {
@@ -81,4 +82,105 @@ footer {
   padding: 1rem 0;
   font-size: 1rem;
   border-radius: 1rem 1rem 0 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 3vw;
+}
+
+.about-left, .about-right {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-left {
+  padding-top: 8vw;
+  padding-left: 2vw;
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4vw;
+  font-weight: 700;
+  margin: 0 0 1.5vw 0;
+}
+
+.about-icon {
+  margin: 1vw 0 2vw 0;
+}
+
+.about-desc {
+  font-size: 1.3vw;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-top: 2vw;
+  max-width: 32vw;
+}
+
+.about-right {
+  align-items: center;
+  padding-top: 5vw;
+}
+
+.profile-img {
+  width: 28vw;
+  max-width: 420px;
+  height: 20vw;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5vw;
+  margin-bottom: 2vw;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+}
+
+.profile-section {
+  margin-top: 1vw;
+  background: none;
+}
+
+.profile-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3vw;
+  font-weight: 700;
+  margin: 0 0 1vw 0;
+  color: #fff;
+}
+
+.profile-info {
+  font-size: 1.2vw;
+  color: #e0e0e0;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vw;
+  }
+  .about-left, .about-right {
+    padding: 0;
+    align-items: center;
+  }
+  .about-title, .profile-title {
+    font-size: 2.2rem;
+  }
+  .about-desc, .profile-info {
+    font-size: 1rem;
+  }
+  .profile-img {
+    width: 90vw;
+    height: 50vw;
+    max-width: 95vw;
+    max-height: 350px;
+  }
 }
