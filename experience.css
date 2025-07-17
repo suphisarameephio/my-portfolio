@@ -1,0 +1,240 @@
+body {
+  background: #ebebeb;
+  color: #181818;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.container {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  padding: 55px 0 0 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.exp-main {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  width: 100vw;
+  margin: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3vw 2vw 0 0;
+  box-sizing: border-box;
+}
+.exp-left {
+  flex: 1.7;
+  min-width: 480px;
+  max-width: 700px;
+  margin-right: 0.2vw;
+  margin-top: 0.5vw;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+}
+.exp-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8vw;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+  color: #181818;
+  letter-spacing: -2px;
+  line-height: 1;
+  padding-left: 12%;
+}
+.exp-desc {
+  font-size: 1.1vw;
+  color: #181818;
+  margin-bottom: 2vw;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-left: 12%;
+}
+.exp-tech {
+  font-size: 1vw;
+  color: #181818;
+  margin-bottom: 2vw;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  padding-left: 12%;
+}
+.exp-right {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0.2vw;
+}
+.exp-img-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(180px, 1fr);
+  gap: 2vw 2vw;
+  width: 100%;
+  margin-top: 0.5vw;
+}
+.exp-img-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  display: block;
+}
+.exp-left img {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  padding-left: 12%;
+}
+.exp-img-gallery img[src*="login.png"] {
+  margin-left: 0;
+  margin-top: 10px;
+  width: 120%;
+  max-width: 420px;
+  height: auto;
+  box-sizing: border-box;
+}
+.exp-left img[alt="Login Example"] {
+  border: none;
+  box-shadow: none;
+}
+@media (max-width: 900px) {
+  .container { max-width: 100vw; }
+  .exp-main { flex-direction: column; gap: 2vw; padding: 2vw 1vw 0 1vw; }
+  .exp-left { max-width: 100vw; min-width: 0; }
+  .exp-title { font-size: 2.2rem; }
+  .exp-desc, .exp-tech { font-size: 1rem; }
+  .exp-img-gallery { grid-template-columns: 1fr; gap: 2vw; }
+  .exp-img-gallery img { width: 100%; }
+}
+
+.main-header {
+  width: 100vw;
+  background: rgba(235, 235, 235, 0.95);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 0.7rem;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #7f7fd5 0%, #86a8e7 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(127,127,213,0.10);
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.logo-tagline {
+  display: block;
+  font-size: 0.7rem;
+  color: #7f7fd5;
+  letter-spacing: 2px;
+  margin-top: -0.3rem;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-left: 110%;
+  margin-top: -1rem;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #7f7fd5 0%, #86a8e7 100%);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #7f7fd5;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 2vw;
+  }
+  .main-nav {
+    gap: 1.2rem;
+  }
+  .logo-text {
+    font-size: 1.2rem;
+  }
+} 
