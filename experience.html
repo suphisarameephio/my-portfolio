@@ -1,76 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience - Suphisara Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="experience.css"/>
 </head>
 <body>
-  <header class="main-header">
-    <div class="header-container">
-      <div class="logo-area">
-        <span class="logo-icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" style="vertical-align:middle;">
-            <defs>
-              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#7f7fd5;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#86a8e7;stop-opacity:1" />
-              </linearGradient>
-            </defs>
-            <circle cx="14" cy="14" r="13" fill="url(#grad2)" />
-            <text x="50%" y="60%" text-anchor="middle" fill="#fff" font-size="16" font-family="Playfair Display" font-weight="bold" dy=".3em">S</text>
-          </svg>
-        </span>
-        <span class="logo-text-group">
-          <span class="logo-text">Suphisara</span>
-          <span class="logo-tagline">Portfolio</span>
-        </span>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <span class="brand__dot">S</span>
+        <span class="brand__text">Suphisara <em>Portfolio</em></span>
       </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">About</a>
-        <a href="experience.html" class="nav-link active">Experience</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
+              <nav class="nav">
+          <a href="index.html">About</a>
+          <a href="experience.html" class="active">Experience</a>
+          <a href="education.html">Education</a>
+          <a href="certificate.html">Certificate</a>
+         
+        </nav>
     </div>
   </header>
-  <div class="container">
-    <div class="exp-main">
-      <div class="exp-left">
-        <div class="exp-title">STRAIGHT LEND</div>
-        <div class="exp-desc">
-          Straight Lend, a platform that simulates<br>
-          the P2P lending process.<br>
-          Users can play the role of a borrower or<br>
-          a lender and go through each loan application step interactively.
-        </div>
-        <div class="exp-tech">
-          THE FRONTEND IS BUILT WITH HTML, CSS, AND JAVASCRIPT.<br>
-          WHILE THE BACKEND USES NODE.JS AND EXPRESS.JS FOR SERVER-SIDE OPERATIONS.<br>
-          MYSQL IS USED TO MANAGE USER AND TRANSACTION DATA.
-        </div>
-        <img src="images/1.png" alt="Login Example">
+
+  <!-- Main area -->
+  <main class="experience-container">
+    <!-- Project Navigation Tabs -->
+    <div class="project-tabs">
+      <div class="tab active" data-project="project1">
+       
+        <span class="tab-text">Straight Lend</span>
       </div>
-      <div class="exp-right">
-        <div class="exp-img-gallery">
-          <img src="images/login.png" alt="Example 2">
-          <img src="images/2.png" alt="Example 3">
-          <img src="images/3.png" alt="Example 4">
-          <img src="images/4.png" alt="Example 5">
+      
+      <div class="tab" data-project="project2">
+        
+        <span class="tab-text">Mobile Shopping App</span>
+      </div>
+      
+      <div class="tab" data-project="project3">
+        
+        <span class="tab-text">BU Openhouse</span>
+      </div>
+      
+      <div class="tab" data-project="project4">
+        
+        <span class="tab-text">Power BI</span>
+      </div>
+      
+      <div class="tab" data-project="project5">
+        
+        <span class="tab-text">Weather App</span>
+      </div>
+      
+      <div class="tab" data-project="project6">
+       
+        <span class="tab-text">Warehouse Management</span>
+      </div>
+      
+      <div class="tab" data-project="project7">
+        
+        <span class="tab-text">FAKE NEWS DETECTION</span>
+      </div>
+    </div>
+
+    <!-- Project Content Area -->
+   
+      <div id="project1" class="project-panel active">
+        <div class="project-layout">
+          <div class="project-left">
+            <h1 class="project-title">STRAIGHT LEND</h1>
+            <h2 class="project-subtitle">FULL-STACK P2P LENDING SIMULATION PLATFORM</h2>
+            
+            <div class="project-description">
+              <p>Straight Lend is a web application designed to demonstrate a peer-to-peer (P2P) lending process in a simulated, academic environment without actual transactions.</p>
+              
+              <p>My main role involved implementing core system functions including frontend development, backend API development, and database connectivity. I also collaborated on ER diagram design and UI/UX design.</p>
+              
+              <p>The platform features user sign-up for both lenders and borrowers, loan request creation, identity document uploads for verification, approval tracking, admin dashboard for user validation, interest rate enforcement (5% annually), and transaction monitoring under Thai financial regulations.</p>
+            </div>
+            
+            <div class="key-highlights">
+              <h3>KEY HIGHLIGHTS:</h3>
+              <ul>
+                <li>Role-based authentication (Borrower / Lender / Admin)</li>
+                <li>End-to-end loan request and offering workflows</li>
+                <li>Document submission and admin verification process</li>
+                <li>Interest rate capped at 5% annually in compliance with regulations</li>
+                <li>Real-time relational data storage powered by MySQL</li>
+                <li>Administrative dashboard with validation and risk metrics</li>
+              </ul>
+            </div>
+            
+            <div class="tech-stack">
+              <h3>TECH STACK:</h3>
+              <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: Node.js, Express.js</li>
+                <li>Database: MySQL (relational schema)</li>
+                <li>Collaboration: Co-designed UI and ER Diagram</li>
+              </ul>
+            </div>
+            
+            <div class="left-screenshots">
+              <div class="screenshot">
+                <img src="images/4.png" alt="Borrower Registration Form" class="screenshot-image"/>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-right">
+            <div class="ui-screenshots">
+              <div class="screenshot-row">
+                <div class="screenshot">
+                  <img src="images/1.png" alt="SL Login Screen" class="screenshot-image"/>
+                </div>
+                <div class="screenshot">
+                  <img src="images/2.png" alt="Welcome Screen" class="screenshot-image"/>
+                </div>
+              </div>
+              
+              <div class="screenshot-row">
+                <div class="screenshot">
+                  <img src="images/3.png" alt="Registration Type Selection" class="screenshot-image"/>
+                </div>
+                <div class="screenshot">
+                  <img src="images/5.png" alt="Dashboard Screen" class="screenshot-image"/>
+                </div>
+                <div class="screenshot">
+                  <img src="images/6.png" alt="Dashboard Screen" class="screenshot-image"/>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <div id="project2" class="project-panel">
+          <h1 class="project-title">Mobile Shopping App - UI/UX Design Project</h1>
+          <p class="project-description">
+            Designed a mobile shopping app UI with a clean and intuitive user flow, covering product browsing, cart, checkout, and payment.
+          </p>
+          <div class="app-screens">
+            <div class="screen">
+              <img src="images/shop1.png" alt="Shop Screen 1" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop2.png" alt="Shop Screen 2" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop3.png" alt="Shop Screen 3" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop4.png" alt="Shop Screen 4" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop5.png" alt="Shop Screen 5" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop6.png" alt="Shop Screen 6" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop7.png" alt="Shop Screen 7" class="screen-image"/>
+            </div>
+            <div class="screen">
+              <img src="images/shop8.jpg" alt="Shop Screen 8" class="screen-image"/>
+            </div>
+          </div>
+        </div>
+  
+      <div id="project3" class="project-panel">
+        <div class="project-layout">
+          <div class="project-left">
+            <h1 class="project-title">MINI PROJECT WEBSITE</h1>
+            <h2 class="project-subtitle">BU OPENHOUSE</h2>
+            
+            <div class="project-description">
+              <p>Developed a university news website with a teammate to present announcements and campus updates in a simple, accessible layout.</p>
+              
+              <p>We co-designed the UI and implemented the frontend, focusing on visual structure, usability, and responsiveness across devices.</p>
+            </div>
+            
+          <div class="project-right">
+            <div class="ui-screenshotss">
+              <div class="screenshot-row">
+                <div class="screenshot">
+                  <iframe 
+                    src="https://www.youtube.com/embed/NmbF9m5EE3U?start=1" 
+                    title="BU Openhouse Project Video"
+                    class="video-iframe"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="project4" class="project-panel">
+        <div class="project-layout">
+          <div class="project-left">
+            <h1 class="project-title">POWER BI DASHBOARD</h1>
+            <h2 class="project-subtitle">Global Video Game Sales Analysis
+            </h2>
+            
+            <div class="project-description">
+              <p>Developed a Power BI dashboard with one teammate to analyze global video game sales. The dashboard explores sales distribution across platforms, genres, and release periods with interactive visuals such as line charts, donut charts, and KPI cards.</p>
+              
+              <p>Key Contributions:
+                •	Co-developed data model and applied DAX calculations
+                •	Implemented interactive slicers for dynamic filtering
+                •	Designed intuitive visuals to support decision-making
+                •	Collaborated on the end-to-end process: Data Modeling → DAX → Dashboard Design</p>
+            </div>
+            
+           
+          </div>
+          
+          <div class="project-right">
+            <div class="ui-screenshots">
+              <div class="screenshot-row">
+                <div class="screenshot">
+                  <img src="images/powerbi.png" alt="Power BI Dashboard" class="screenshot-image"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div id="project5" class="project-panel">
+        <div class="project-layout">
+          <div class="project-left">
+            <h1 class="project-title">WEATHER APP</h1>
+            <h2 class="project-subtitle">REAL-TIME FORECASTING</h2>
+            
+            <div class="project-description">
+              <p>Built a modern weather application that provides real-time forecasts based on user-selected cities. The app includes an interactive SwiftUI interface showing temperature, conditions, dynamic icons, and favorite cities.</p>
+              
+              <p><strong>Role & Contributions:</strong></p>
+              <ul>
+                <li>Led the full development process: API integration, UI design, and state management</li>
+                <li>Designed responsive UI with SwiftUI</li>
+                <li>Implemented Combine for reactive data binding</li>
+                <li>Used MapKit for city mapping & location search</li>
+                <li>Integrated OpenWeatherMap API for real-time weather and geocoding</li>
+                <li>Visualized trends with Swift Charts</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-right">
+            <div class="slider">
+              <div class="slides">
+                <div class="slide active">
+                  <img src="images/weather1.png" alt="Weather App Screen 1" class="slide-image2" style="border-radius: 20px !important; -webkit-border-radius: 20px !important; -moz-border-radius: 20px !important; overflow: hidden;"/>
+                </div>
+                <div class="slide">
+                  <img src="images/weather2.png" alt="Weather App Screen 2" class="slide-image2" style="border-radius: 20px !important; -webkit-border-radius: 20px !important; -moz-border-radius: 20px !important; overflow: hidden;"/>
+                </div>
+                <div class="slide">
+                  <img src="images/weather3.png" alt="Weather App Screen 3" class="slide-image2" style="border-radius: 20px !important; -webkit-border-radius: 20px !important; -moz-border-radius: 20px !important; overflow: hidden;"/>
+                </div>
+                <div class="slide">
+                  <img src="images/weather4.png" alt="Weather App Screen 4" class="slide-image2" style="border-radius: 20px !important; -webkit-border-radius: 20px !important; -moz-border-radius: 20px !important; overflow: hidden;"/>
+                </div>
+                <div class="slide">
+                  <img src="images/weather5.png" alt="Weather App Screen 5" class="slide-image2" style="border-radius: 20px !important; -webkit-border-radius: 20px !important; -moz-border-radius: 20px !important; overflow: hidden;"/>
+                </div>
+              </div>
+              
+              <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+              <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+              
+              <div class="slider-dots">
+                <span class="slider-dot active" onclick="currentSlide(1)"></span>
+                <span class="slider-dot" onclick="currentSlide(2)"></span>
+                <span class="slider-dot" onclick="currentSlide(3)"></span>
+                <span class="slider-dot" onclick="currentSlide(4)"></span>
+                <span class="slider-dot" onclick="currentSlide(5)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="project6" class="project-panel">
+        <div class="project-layout">
+          <div class="project-left">
+            <h1 class="project-title">WAREHOUSE MANAGEMENT</h1>
+            
+            
+            <div class="project-description">
+              <p>Developed a real-time warehouse management module for an ERP system, supporting full CRUD functionality for managing product, employee, and company data. I was fully responsible for both frontend and backend development. This included designing and building web pages such as Home, Product, Employee, and Company, with each section connected to a live database.
+                The backend was built using Node.js, while the frontend was developed with React, TypeScript, HTML/CSS, and Bootstrap. The system features a clean, responsive UI and allows users to interact with data in real-time.</p>
+            </div>
+          </div>
+          
+          <div class="project-right">
+            <div class="ui-screenshots2">
+              <div class="screenshot-row">
+                <div class="screenshot">
+                  <iframe 
+                    src="https://www.youtube.com/embed/DtHTsD6hhUA" 
+                    title="Task Management System Video"
+                    class="video-iframe"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="project7" class="project-panel">
+        <div class="project-layout">
+          <div class="project-left">
+            <h1 class="project-title">FAKE NEWS DETECTION</h1>
+            <h2 class="project-subtitle">MACHINE LEARNING & NLP</h2>
+            
+            <div class="project-description">
+              <p>The system uses BERT (bert-base-uncased) fine-tuned via transfer learning for binary classification of real vs fake news. I handled the entire development pipeline, including data preparation, model training with NLP techniques, and building a Flask web interface. The model was implemented using PyTorch and Hugging Face Transformers, achieving over 90% accuracy.</p>
+              
+              <p>The goal is to promote awareness and help users verify news content in real-time before spreading misinformation.</p>
+            </div>
+          </div>
+          
+          <div class="project-right">
+            <div class="ui-screenshots">
+              <div class="screenshot-row">
+                <div class="screenshot">
+                  <video controls muted style="max-width: 700px; width: 100%; border-radius: 18px; box-shadow: 0 4px 24px rgba(138,43,226,0.10); background: #fff;">
+                    <source src="images/fakenews.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Power BI dashboard section (block ใหม่ด้านล่าง) -->
-  <div class="bi-section" style="margin-top: 4vw; text-align: center;">
-    <img src="images/bi.png" alt="Power BI dashboard" style="max-width: 700px; width: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.08); border-radius: 1vw;">
-    <div style="max-width: 700px; margin: 2vw auto 0 auto; text-align: left;">
-      <div style="font-size: 2rem; font-weight: bold; font-family: 'Playfair Display', serif; margin-bottom: 0.5rem;">Power BI dashboard</div>
-      <div style="font-size: 1.1rem; color: #222; line-height: 1.6;">
-        This project is a Power BI dashboard that analyzes global video game sales.<br>
-        It provides insights into top-selling platforms, popular game genres, sales trends by year, and game distribution by platform and rating, with interactive filters for deeper exploration.
-      </div>
-    </div>
-  </div>
+  </main>
+
+  <script>
+    // Tab switching functionality
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.project-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and panels
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Show corresponding panel
+        const projectId = tab.getAttribute('data-project');
+        const panel = document.getElementById(projectId);
+        if (panel) {
+          panel.classList.add('active');
+        }
+      });
+    });
+
+    // Slider functionality
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+
+    function showSlide(index) {
+      // Hide all slides
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      // Show current slide
+      if (slides[index]) {
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+      }
+    }
+
+    function changeSlide(direction) {
+      currentSlideIndex += direction;
+      
+      if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = 0;
+      } else if (currentSlideIndex < 0) {
+        currentSlideIndex = slides.length - 1;
+      }
+      
+      showSlide(currentSlideIndex);
+    }
+
+    function currentSlide(index) {
+      currentSlideIndex = index - 1;
+      showSlide(currentSlideIndex);
+    }
+
+    // Auto-play slider
+    setInterval(() => {
+      changeSlide(1);
+    }, 3000);
+  </script>
 </body>
 </html> 

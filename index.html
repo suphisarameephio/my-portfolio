@@ -2,70 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1280, initial-scale=1.0"/>
-  <title>About Me - Suphisara Meephio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suphisara Portfolio — About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <div class="header-container">
-      <div class="logo-area">
-        <span class="logo-icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" style="vertical-align:middle;">
-            <defs>
-              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#ff5f6d;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#ffc371;stop-opacity:1" />
-              </linearGradient>
-            </defs>
-            <circle cx="14" cy="14" r="13" fill="url(#grad1)" />
-            <text x="50%" y="60%" text-anchor="middle" fill="#181818" font-size="16" font-family="Playfair Display" font-weight="bold" dy=".3em">S</text>
-          </svg>
-        </span>
-        <span class="logo-text-group">
-          <span class="logo-text">Suphisara</span>
-          <span class="logo-tagline">Portfolio</span>
-        </span>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <span class="brand__dot">S</span>
+        <span class="brand__text">Suphisara <em>Portfolio</em></span>
       </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link active">About</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="portfolio.html" class="nav-link portfolio-link">Portfolio</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+      <nav class="nav">
+        <a href="index.html" class="active">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="certificate.html">Certificate</a>
+        
       </nav>
     </div>
   </header>
-  <div class="about-container">
-    <div class="about-left">
-      <h1 class="about-title">About me</h1>
-      <div class="about-icon">
-        <svg width="60" height="60" viewBox="0 0 60 60">
-          <ellipse cx="30" cy="45" rx="25" ry="8" fill="none" stroke="#fff" stroke-width="2"/>
-          <ellipse cx="30" cy="35" rx="25" ry="8" fill="none" stroke="#fff" stroke-width="2"/>
-          <ellipse cx="30" cy="25" rx="25" ry="8" fill="#fff"/>
-        </svg>
-      </div>
-      <p class="about-desc">
-        I enjoy crafting beautiful, user-friendly<br>
-        interfaces as much as I enjoy debugging code<br>
-        and making systems work smoothly.<br>
-        With a mix of creativity and structured thinking, I<br>
-        thrive in projects that let me explore both design<br>
-        and development sides.
-      </p>
-    </div>
-    <div class="about-right">
-      <img src="images/profile1.png" alt="Suphisara Meephio" class="profile-img"/>
-      <div class="profile-section">
-        <h2 class="profile-title">Profile</h2>
-        <div class="profile-info">
-          <div>Suphisara Meephio</div>
-          <div>Birthday : Dec 25, 2003 Age 21 years</div>
-          <div>Gmail : Suphisxmp@gmail.com</div>
+
+  <!-- Main area -->
+  <main class="wrap">
+    <!-- Left: big photo -->
+    <section class="left">
+      <figure class="photo">
+        <img src="images/Profile.jpg" alt="Suphisara Meephio">
+      </figure>
+
+      <div class="identity">
+        <h1 class="identity__name">Suphisara Meephio <span class="muted">(she/her)</span></h1>
+        <p class="identity__tag">Open to Internship Opportunities</p>
+
+        <div class="connect">
+          <p class="connect__title">CONNECT WITH ME</p>
+          <div class="connect__icons">
+            <a href="mailto:suphisxmp@gmail.com" aria-label="email" class="icon-link">
+              <!-- mail icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="m22 8-10 6L2 8"/></svg>
+            </a>
+            <a href="https://www.instagram.com/suphxs.utd?utm_source=ig_web_button_share_sheet&igsh=eW9pdDJtejU4OWRq" target="_blank" class="icon-link" aria-label="instagram">
+              <!-- ig -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="https://www.facebook.com/suphisarameephio" target="_blank" class="icon-link" aria-label="facebook">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.15.38-2 2-2h2V2h-3c-3.02 0-5 1.79-5 5v3H6v4h3v8h4z"/></svg>
+            </a>
+            
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <!-- Right: About text -->
+    <section class="right">
+      <div class="about">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2 class="about__title">Aspiring Full-stack Developer</h2>
+        <p class="about__text">
+          I am a Computer Science student at Bangkok University (expected graduation: May 2026),
+          passionate about creating user-friendly and high-performance web applications. I specialize in
+          React.js, Node.js, and MySQL, and apply an Agile mindset to collaborate effectively with teams.
+          Driven to solve real-world problems, I aim to contribute scalable and innovative solutions in every project I take on.
+        </p>
+      </div>
+
+      <a href="experience.html" class="cta">Experience</a>
+    </section>
+  </main>
+
 </body>
-</html>                 
+</html>
